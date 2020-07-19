@@ -1,0 +1,323 @@
+ :root {
+     --color-white: #fff;
+     --color-black: #000;
+     --color-primary: #623ABD;
+     --color-gray: #EFEFEF;
+     --color-green: #05B169;
+     --default-font: "Khula", sans-serif;
+ }
+ 
+ body {
+     font: 1rem/1.5;
+     /* font-family: var(--default-font); */
+ }
+ 
+ h2 {
+     font-weight: 700;
+     /* text-indent: 1em; */
+     letter-spacing: 3px;
+     letter-spacing: 0px;
+ }
+ 
+ p {
+     font-weight: 100;
+ }
+ 
+ .bg-gray {
+     background-color: var(--color-gray);
+ }
+ 
+ .text-default {
+     color: var(--color-primary);
+ }
+ 
+ .bg-default {
+     background-color: var(--color-primary);
+ }
+ /* Nav Bar */
+ 
+ .navbar-dark .navbar-nav .nav-link {
+     color: var(--color-black)
+ }
+ 
+ .navbar-dark .navbar-toggler {
+     color: var(--color-primary);
+     border-color: var(--color-primary);
+     background-color: var(--color-primary);
+ }
+ 
+ li a {
+     color: var(--color-white);
+ }
+ 
+ a:hover {
+     color: var(--color-black)
+ }
+ /* Header Section */
+ 
+ header {
+     padding: 15rem 0 100px;
+ }
+ 
+ .border-change {
+     /* border: 1px solid #EEEEEE; */
+     -webkit-box-shadow: 2px 2px 10px 0px rgba(238, 238, 238, 1);
+     -moz-box-shadow: 2px 2px 10px 0px rgba(238, 238, 238, 1);
+     box-shadow: 2px 2px 10px 0px rgba(238, 238, 238, 1);
+ }
+ 
+ .bg-img {
+     background: url("https://res.cloudinary.com/identityseal/image/upload/v1595089965/drinksafe/adam-jaime-dmkmrNptMpw-unsplash_ug9tk6.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: static;
+     /* overflow: hidden; */
+     z-index: 1;
+     height: 650px;
+ }
+ 
+ .body-bg {
+     background-image: url('https://res.cloudinary.com/identityseal/image/upload/v1595089967/drinksafe/body-bg_umnhaj.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: static;
+     /* overflow: hidden; */
+     /* z-index: 1; */
+     height: 400px;
+     background-attachment: fixed;
+ }
+ 
+ .date-bg {
+     background-color: var(--color-primary);
+ }
+ 
+ .body-bg:before {
+     background-size: cover;
+     content: "";
+     display: block;
+     position: static;
+     /* could also be absolute */
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     background-image: linear-gradient( var(--color-primary), var(--color-primary), var(--color-primary), var(--color-primary));
+     opacity: 0.35;
+     height: 400px;
+ }
+ /* .bg-img:before, */
+ 
+ .bg-img:before {
+     background-size: cover;
+     content: "";
+     display: block;
+     position: absolute;
+     /* could also be absolute */
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     /* width: 100%; */
+     background-image: linear-gradient( var(--color-primary), var(--color-primary), var(--color-primary), var(--color-primary));
+     opacity: 0.35;
+     height: 650px;
+ }
+ 
+ section {
+     padding: 150px 0;
+ }
+ 
+ .vertical-center {
+     margin: 0;
+     /* position: absolute; */
+     top: 50%;
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+ }
+ 
+ .box-css {
+     border-top-right-radius: 3.5rem;
+     border-bottom-right-radius: 3.5rem;
+     padding-top: 2rem;
+     padding-bottom: 3rem;
+     background-color: var(--color-primary);
+     background-image: url('https://res.cloudinary.com/identityseal/image/upload/v1595151041/drinksafe/Group_91_xlfrzx.png');
+ }
+ 
+ .jumbotron,
+ .border-arc {
+     border-radius: 1rem;
+ }
+ 
+ .font-none {
+     font-family: sans-serif;
+ }
+ 
+ .availabilty-div {
+     margin-top: 5rem;
+ }
+ 
+ .more-padding {
+     padding-left: 5rem;
+     padding-right: 5rem;
+ }
+ 
+ .jumbotron-form {
+     border-radius: 1rem;
+     margin-top: -90px;
+ }
+ 
+ .circle-icon {
+     border: 1px solid var(--color-primary);
+     border-radius: 0.2rem;
+     height: 30px;
+     width: 30px;
+ }
+ 
+ .border-box {
+     height: 30px;
+     width: 30px;
+ }
+ 
+ hr {
+     margin-left: 50px;
+     margin-right: 50px;
+ }
+ 
+ .flex-container {
+     display: flex;
+     justify-content: center;
+     /* background-color: DodgerBlue; */
+     padding-bottom: 50px;
+ }
+ 
+ .flex-container>div {
+     /* background-color: #f1f1f1; */
+     border-radius: 50%;
+     border: 5px solid var(--color-white);
+     width: 110px;
+     height: 110px;
+     margin: 10px;
+     font-weight: 700;
+     text-align: center;
+     line-height: 100px;
+     font-size: 35px;
+     color: var(--color-white)
+ }
+ 
+ .lineheight {
+     line-height: 110px;
+     font-weight: 700;
+     font-size: 20px;
+     color: var(--color-white)
+ }
+ /* .round-border {
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+} */
+ 
+ .block {
+     display: inline-block;
+     list-style: none;
+ }
+ /* .fieldwrapper {
+    white-space: nowrap;
+} */
+ 
+ .btn-app img {
+     height: 50px;
+     width: auto;
+     margin-right: 10px;
+     margin-bottom: 10px;
+ }
+ /* .text {
+    text-indent: 1em;
+    letter-spacing: 3px;
+} */
+ /* input[type="text"] {
+    border-radius: 1rem;
+    width: 200px;
+    height: 20px;
+    padding-right: 50px;
+}
+
+input[type="submit"] {
+    border-radius: 1rem;
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    background: blue;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+} */
+ 
+ .btn-primary {
+     background-color: var(--color-green);
+     border-color: var(--color-green);
+ }
+ 
+ .btn-primary:hover {
+     background-color: var(--color-green) !important;
+     border-color: var(--color-green) !important;
+ }
+ 
+ ol.carousel-indicators {
+     /* right: auto !important; */
+     bottom: -50px;
+     /* margin-right: 0px; */
+ }
+ 
+ .carousel-indicators li {
+     height: 15px;
+     width: 15px;
+     border-radius: 50%;
+     /* margin-right: 5px; */
+ }
+ /*FOOTER  */
+ /* CONTACT PAGE */
+ 
+ .mag-minus {
+     margin-left: -50px;
+ }
+ /* .img {
+    height: 600px !important;
+} */
+ /* Small Screens */
+ 
+ @media (max-width: 595px) {
+     .sm-pt-6 {
+         padding-top: 5rem;
+     }
+     .flex-container>div {
+         border-radius: 50%;
+         border: 3px solid var(--color-white);
+         width: 60px;
+         height: 60px;
+         margin: 10px;
+         font-weight: 200;
+         text-align: center;
+         line-height: 50px;
+         font-size: 35px;
+         color: var(--color-white);
+     }
+     .lineheight {
+         line-height: 70px;
+         font-weight: 200;
+         font-size: 20px;
+         color: var(--color-white);
+     }
+     .more-padding {
+         padding-left: 0rem;
+         padding-right: 0rem;
+     }
+     .mag-minus {
+         margin-left: 0px;
+         margin-top: 1rem;
+     }
+ }
+}
